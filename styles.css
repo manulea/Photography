@@ -1,53 +1,73 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
 .image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    max-width: 30%; /* Ensures the container doesn't exceed the image's width */
-    max-height: 30%; /* Ensures the container doesn't exceed the image's height */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 30%; /* Ensures the container doesn't exceed the image's width */
+  max-height: 30%; /* Ensures the container doesn't exceed the image's height */
+}
 
-  .image-title {
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: color 0.5s ease; /* Add transition for color change */
-  }
-  
-  @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-  }
+.image-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: color 0.5s ease; /* Add transition for color change */
+}
 
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.5s ease, transform 2s ease; /* Add a smooth transition effect */
-  }
-  
-  .image-container:hover img {
-    opacity: 0.3; /* Set opacity to the desired lighter value for the image */
-    transform: scale(1.2); /* Enlarge the image by 20% */
-    transition: opacity 0.5s ease, transform 2s ease; /* Add transition for opacity and transform change on hover */
-  }
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
 
-  .image-container:hover .image-title {
-    opacity: 0;
-    transition: color 0.5s ease; /* Add transition for color change on hover */
-  }
+.image-container img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, transform 2s ease; /* Add a smooth transition effect */
+}
+
+.image-container:hover img {
+  opacity: 0.3; /* Set opacity to the desired lighter value for the image */
+  transform: scale(1.2); /* Enlarge the image by 20% */
+  transition: opacity 0.5s ease, transform 2s ease; /* Add transition for opacity and transform change on hover */
+}
+
+.image-container:hover .image-title {
+  opacity: 0;
+  transition: color 0.5s ease; /* Add transition for color change on hover */
+}
+
+/* ... */
+.enter-text {
+  position:absolute; 
+  top:50%; 
+  left:50%; 
+  transform:translate(-50%, -50%); 
+  font-size:36px; 
+  font-family:'Courier New', Courier, monospace; 
+  color:black; 
+  opacity:0; 
+  transition-duration:.5s; 
+}
+.image-container:hover .enter-text{
+  opacity:.8; 
+}
+.enter-text:hover { /* Add this style */
+   color:white;
+}
+/* ... */
+

@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ddd;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+}
+
+.hero-text {
+    position:absolute; 
+   top:50%; 
+   left:50%; 
+   transform:translate(-50%, -50%); 
+   color:white; 
+   text-align:center; 
+}
+
+#about,
+#portfolio,
+#contact {
+    padding: 40px 0;
+}
+
+.portfolio-grid {
+    list-style:none; 
+   margin:0; 
+   padding:0; 
+   display:flex; 
+   flex-wrap:wrap; 
+}
+
+.portfolio-grid li {
+   width:33.33%; 
+   padding:10px; 
+}
+
+.portfolio-grid img {
+   width:100%; 
+   height:auto; 
+}
+
+footer {
+   padding:20px; 
+   background-color:#333; 
+   color:white; 
+   text-align:center; 
+}
